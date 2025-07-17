@@ -1,13 +1,13 @@
 import PortfolioHero from "@/components/PortfolioHero";
 import BioSection from "@/components/BioSection";
-import FeaturedProjects from "@/components/FeaturedProjects";
+import ProjectTabs from "@/components/ProjectTabs";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <PortfolioHero />
       <BioSection />
-      <FeaturedProjects />
+      <ProjectTabs />
     </div>
   );
 };
