@@ -61,6 +61,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				portfolio: {
+					primary: 'hsl(var(--portfolio-primary))',
+					secondary: 'hsl(var(--portfolio-secondary))',
+					accent: 'hsl(var(--portfolio-accent))',
+					neutral: 'hsl(var(--portfolio-neutral))',
+					card: 'hsl(var(--portfolio-card))',
+					muted: 'hsl(var(--portfolio-text-muted))'
 				}
 			},
 			borderRadius: {

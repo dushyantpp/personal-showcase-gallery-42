@@ -17,7 +17,7 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 220 100% 50%;
+    --primary: 280 65% 75%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 210 40% 96.1%;
@@ -26,8 +26,8 @@ All colors MUST be HSL.
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 28 100% 65%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 190 85% 82%;
+    --accent-foreground: 0 0% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -38,20 +38,23 @@ All colors MUST be HSL.
 
     --radius: 1rem;
 
-    /* Portfolio specific colors */
-    --portfolio-blue: 220 100% 50%;
-    --portfolio-blue-dark: 230 100% 35%;
-    --portfolio-orange: 28 100% 65%;
-    --portfolio-card: 0 0% 98%;
-    --portfolio-text-muted: 215.4 16.3% 60%;
+    /* Portfolio specific colors - Modern Pastel Theme */
+    --portfolio-primary: 280 65% 75%;     /* Soft lavender */
+    --portfolio-secondary: 300 55% 85%;   /* Light pink */
+    --portfolio-accent: 190 85% 82%;      /* Soft mint/teal */
+    --portfolio-neutral: 40 20% 92%;      /* Warm cream */
+    --portfolio-card: 0 0% 99%;
+    --portfolio-text-muted: 215.4 16.3% 55%;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--portfolio-blue)), hsl(var(--portfolio-blue-dark)));
-    --gradient-card: linear-gradient(145deg, hsl(var(--portfolio-card)), hsl(0 0% 100%));
+    --gradient-primary: linear-gradient(135deg, hsl(280 65% 75%), hsl(300 55% 85%));
+    --gradient-secondary: linear-gradient(145deg, hsl(190 85% 82%), hsl(280 65% 75%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 99%), hsl(40 20% 96%));
+    --gradient-background: linear-gradient(135deg, hsl(300 30% 96%), hsl(280 20% 95%), hsl(40 25% 94%));
     
     /* Shadows */
-    --shadow-card: 0 10px 30px -10px hsl(var(--portfolio-blue) / 0.15);
-    --shadow-hover: 0 20px 40px -15px hsl(var(--portfolio-blue) / 0.25);
+    --shadow-card: 0 10px 30px -10px hsl(280 45% 85% / 0.3);
+    --shadow-hover: 0 20px 40px -15px hsl(280 45% 80% / 0.4);
     
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -103,9 +106,10 @@ All colors MUST be HSL.
     --ring: 212.7 26.8% 83.9%;
     
     /* Dark mode portfolio colors */
-    --portfolio-blue: 220 100% 60%;
-    --portfolio-blue-dark: 230 100% 45%;
-    --portfolio-orange: 28 100% 70%;
+    --portfolio-primary: 280 55% 65%;
+    --portfolio-secondary: 300 45% 75%;
+    --portfolio-accent: 190 75% 72%;
+    --portfolio-neutral: 40 15% 20%;
     --portfolio-card: 217.2 32.6% 17.5%;
     --portfolio-text-muted: 215 20.2% 65.1%;
     --sidebar-background: 240 5.9% 10%;
@@ -134,6 +138,14 @@ All colors MUST be HSL.
     background: var(--gradient-primary);
   }
   
+  .portfolio-secondary-gradient {
+    background: var(--gradient-secondary);
+  }
+  
+  .portfolio-background-gradient {
+    background: var(--gradient-background);
+  }
+  
   .card-gradient {
     background: var(--gradient-card);
   }
@@ -150,8 +162,12 @@ All colors MUST be HSL.
     transition: var(--transition-smooth);
   }
 
-  .text-portfolio-orange {
-    color: hsl(var(--portfolio-orange));
+  .text-portfolio-primary {
+    color: hsl(var(--portfolio-primary));
+  }
+  
+  .text-portfolio-accent {
+    color: hsl(var(--portfolio-accent));
   }
   
   .text-portfolio-muted {
@@ -160,6 +176,14 @@ All colors MUST be HSL.
   
   .bg-portfolio-card {
     background-color: hsl(var(--portfolio-card));
+  }
+  
+  .bg-portfolio-primary {
+    background-color: hsl(var(--portfolio-primary));
+  }
+  
+  .bg-portfolio-secondary {
+    background-color: hsl(var(--portfolio-secondary));
   }
 
   .hover-lift {

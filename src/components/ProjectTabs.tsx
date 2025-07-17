@@ -13,6 +13,15 @@ const ProjectTabs = () => {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      {/* Header Image */}
+      <div className="mb-8">
+        <img 
+          src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=400&fit=crop" 
+          alt="Data visualization and analysis" 
+          className="w-full h-64 object-cover rounded-lg shadow-card"
+        />
+      </div>
+      
       <Card className="p-8 bg-portfolio-card shadow-card">
         <div className="mb-8">
           <h2 className="text-3xl font-bold text-foreground mb-2">Project Categories</h2>

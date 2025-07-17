@@ -26,7 +26,7 @@ const PortfolioHero = () => {
   };
 
   return (
-    <div className="min-h-screen portfolio-gradient px-4 py-8">
+    <div className="min-h-screen portfolio-background-gradient px-4 py-8">
       <div className="max-w-6xl mx-auto">
         {/* Main Portfolio Card */}
         <Card className="bg-portfolio-card shadow-card hover-lift p-8 md:p-12 animate-fade-in">
@@ -41,7 +41,7 @@ const PortfolioHero = () => {
                 
                 <div className="flex-1">
                   <div className="mb-2">
-                    <span className="text-portfolio-orange font-medium text-lg animate-float">
+                    <span className="text-portfolio-accent font-medium text-lg animate-float">
                       Hello, I am
                     </span>
                   </div>

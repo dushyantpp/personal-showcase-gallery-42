@@ -23,7 +23,7 @@ const ProjectList = ({ title, description, projects }: ProjectListProps) => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-portfolio-primary via-portfolio-secondary to-portfolio-accent">
+    <div className="min-h-screen portfolio-background-gradient">
       <div className="max-w-6xl mx-auto px-4 py-8">
         <Card className="p-8 bg-portfolio-card shadow-card">
           <div className="mb-8">
